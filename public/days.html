@@ -10,7 +10,18 @@
 
 <body>
   <!-- HTML content here -->
-  <h1>This is Days page</h1>
+  <h1>Day Calculator</h1>
+
+  <label for="startDate">기준 날짜:</label>
+  <input type="date" class="startDate" name="startDate"><br><br>
+
+  <label for="numDays">지날 날(이전일인 경우 음수):</label>
+  <input type="number" class="numDays" name="numDays"><br><br>
+
+  <button onclick="calculateDate()">계산하기</button>
+
+  <p class="result"></p>
+  
   <script src="./js/days.js"></script>
 </body>
 
