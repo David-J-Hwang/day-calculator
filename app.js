@@ -10,24 +10,24 @@ app.get('/', (req, res) => {
 })
 
 app.get('/days', (req, res) => {
-    res.send('Days calculation page');
-});
+  res.sendFile(path.join(__dirname, 'public', 'days.html'))
+})
 
 app.get('/weeks', (req, res) => {
-    res.send('Weeks calculation page');
-});
+  res.sendFile(path.join(__dirname, 'public', 'weeks.html'))
+})
 
 app.get('/months', (req, res) => {
-    res.send('Months calculation page');
-});
+  res.sendFile(path.join(__dirname, 'public', 'months.html'))
+})
 
 app.get('/years', (req, res) => {
-    res.send('Years calculation page');
-});
+  res.sendFile(path.join(__dirname, 'public', 'years.html'))
+})
 
 app.get('/d-day', (req, res) => {
-    res.send('D-day calculation page');
-});
+  res.sendFile(path.join(__dirname, 'public', 'dday.html'))
+})
 
 
 app.listen(PORT, () => {
