@@ -20,5 +20,11 @@ function calculateDate() {
   });
 
   document.querySelector('.result').innerHTML = 
-  `Resulting Date: ${formattedDate}`
+  `계산결과: ${formattedDate}`
 }
+
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Enter') {
+    calculateDate()
+  }
+})
