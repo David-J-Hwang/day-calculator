@@ -1,4 +1,4 @@
-/* Base Styles */
+Base Styles
 * {
   box-sizing: border-box;
   margin: 0;
@@ -79,4 +79,78 @@ button:hover {
 
 p {
   color: black;
+}
+
+
+/* New Styles */
+
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #000000, #434343);
+  /* Dark gradient background */
+  color: #ffffff;
+  /* White text for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+input,
+button {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  background-color: #4caf50;
+  /* Green button for action */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  input,
+  button {
+    width: 80%;
+    font-size: 0.9em;
+  }
 }
