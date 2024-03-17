@@ -1,3 +1,4 @@
+// calculateDDay(): void, 디데이 계산하는 함수
 function calculateDDay() {
   // targetDate는 input element로 부터 얽으므로 string type이다. 
   // 이를 위해서 .value를 통해 원래의 'Date' object 형태로 값을 읽어올 수 있다.
@@ -23,7 +24,7 @@ function calculateDDay() {
   // console.log(`diffTime: ${diffTime}`)
   // console.log(`diffDays: ${diffDays}`)
 
-  let resultText
+  let resultText = '';
   if(diffDays < 0) {
     resultText = `D + ${Math.abs(diffDays)}`
   }
@@ -37,6 +38,7 @@ function calculateDDay() {
   document.querySelector('.result').innerHTML = resultText
 }
 
+// 엔터키 입력 시 
 document.addEventListener('keydown', (e) => {
   if(e.key === 'Enter') {
     calculateDDay()

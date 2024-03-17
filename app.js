@@ -1,3 +1,5 @@
+const colors = require('colors')
+
 const express = require('express')
 const path = require('path')
 const app = express()
@@ -7,30 +9,29 @@ app.use(express.static('public'))
 
 // ROUTES
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html')
+  res.sendFile(__dirname + '/public/html/index.html')
 })
 
 app.get('/days', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'days.html'))
+  res.sendFile(path.join(__dirname, 'public', 'html', 'days.html'))
 })
 
 app.get('/weeks', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'weeks.html'))
+  res.sendFile(path.join(__dirname, 'public', 'html', 'weeks.html'))
 })
 
 app.get('/months', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'months.html'))
+  res.sendFile(path.join(__dirname, 'public', 'html', 'months.html'))
 })
 
 app.get('/years', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'years.html'))
+  res.sendFile(path.join(__dirname, 'public', 'html', 'years.html'))
 })
 
 app.get('/d-day', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'dday.html'))
+  res.sendFile(path.join(__dirname, 'public', 'html', 'dday.html'))
 })
 
-
 app.listen(PORT, () => {
-  console.log(`Server running at PORT: ${PORT}`)
+  console.log(`Server running at PORT: ${PORT}...`.bgCyan)
 })
