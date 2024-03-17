@@ -10,7 +10,6 @@ Express 서버와 static file들로 구성된 날짜 계산기입니다.
 
 ### 실행방법
 1. 콘솔 창에 npm start를 입력합니다.
-    npm start
 2. localhost:5500에 접속합니다.
 
 ### 부가정보
